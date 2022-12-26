@@ -108,3 +108,14 @@ form label span {
 /* careers details */
 
 /* breadcrumbs */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 30px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc4123;
+}

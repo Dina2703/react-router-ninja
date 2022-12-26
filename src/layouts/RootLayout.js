@@ -15,6 +15,7 @@ function RootLayout() {
       <main>
         <Outlet />
       </main>
+      <footer className="footer">All writes reserved</footer>
     </div>
   );
 }
