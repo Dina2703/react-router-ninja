@@ -7,6 +7,9 @@ import {
 import Home from "./pages/Home";
 import About from "./pages/About";
 import RootLayout from "./layouts/RootLayout";
+import HelpLayout from "./layouts/HelpLayout";
+import Faq from "./pages/Faq";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +17,10 @@ const router = createBrowserRouter(
       {/*when path is "/" you can use just the boolean prop 'index' */}
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="help" element={<HelpLayout />}>
+        <Route path="faq" element={<Faq />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
     </Route>
   )
 );
