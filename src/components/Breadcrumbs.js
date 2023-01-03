@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function Breadcrumbs() {
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   //goal is to output a template like:
   //if the pathname property of the location is '/help/contact' --> help | contact
@@ -21,7 +21,7 @@ function Breadcrumbs() {
         </div>
       );
     });
-  console.log(crumbs);
+  // console.log(crumbs);
 
   return <div className="breadcrumbs">{crumbs}</div>;
 }
