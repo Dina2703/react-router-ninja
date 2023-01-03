@@ -6,10 +6,9 @@
 }
 body {
   margin: 0;
-  padding: 30px;
+  padding: 20px;
   font-family: "Poppins";
   background: var(--secondary);
-  overflow-x: hidden;
 }
 * {
   color: #fff;
@@ -123,6 +122,7 @@ form label span {
   font-size: 0.8em;
   color: #bbb;
 }
+
 /* careers details */
 .career-details {
   background: rgba(0, 0, 0, 0.2);
@@ -130,14 +130,23 @@ form label span {
   border-radius: 4px;
   margin: 20px 0;
 }
-/* breadcrumbs */
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  height: 50px;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
 }
