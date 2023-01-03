@@ -46,3 +46,6 @@ function App() {
 }
 
 export default App;
+
+//Don't forget to run server to fetch data.
+// json-server -p 4000 -w ./data/db.json

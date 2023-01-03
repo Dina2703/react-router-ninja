@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 
 function CareersDetails() {
   const { id } = useParams();
+  console.log(id); //just to show that we can acces route param using useParams()
   const career = useLoaderData();
 
   return (
