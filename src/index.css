@@ -150,3 +150,12 @@ form label span {
 .breadcrumbs .crumb a {
   color: #ddd;
 }
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: calc(100vw - 60px);
+  padding: 20px;
+  overflow: hidden;
+}
